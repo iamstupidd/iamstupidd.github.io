@@ -371,5 +371,18 @@
 
   
 
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', () => {
+    new Valine(Object.assign({
+      el  : '#valine-comments',
+      path: location.pathname,
+    }, {"enable":true,"appId":"M0wde0pQqGKXNnjjrjPT2zXO-gzGzoHsz# Your leancloud application appid","appKey":"EqGjdJslXIGLoxHAq08uPEyq# Your leancloud application appkey","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"language":null,"visitor":false,"comment_count":true,"recordIP":false,"serverURLs":null,"enableQQ":false,"requiredFields":[],"post_meta_order":0}
+    ));
+  }, window.Valine);
+});
+</script>
+
 </body>
 </html>
