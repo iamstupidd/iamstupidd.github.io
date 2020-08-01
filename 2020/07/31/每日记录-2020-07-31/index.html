@@ -346,8 +346,8 @@
       <i class="fa fa-chevron-left"></i> 每日记录
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/07/31/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/" rel="next" title="个人简历">
-      个人简历 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/08/01/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-01/" rel="next" title="每日记录-2020-08-01">
+      每日记录-2020-08-01 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -469,6 +469,26 @@
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
