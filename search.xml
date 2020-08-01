@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/07/30/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>每日记录-2020/07/31</title>
+    <url>/2020/07/31/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-07-31/</url>
+    <content><![CDATA[<h2 id="果然还是没能早点起来。。。。9：20"><a href="#果然还是没能早点起来。。。。9：20" class="headerlink" title="果然还是没能早点起来。。。。9：20"></a>果然还是没能早点起来。。。。9：20</h2><a id="more"></a>
+
+<p><img src="1.png" alt="1"></p>
+<h2 id="今天做了什么"><a href="#今天做了什么" class="headerlink" title="今天做了什么"></a>今天做了什么</h2><ul>
+<li><p><font color="#0099ff">Compiler</font></p>
+<p><img src="2.png" alt="图着色"></p>
+</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    CLion的使用</span></span><br><span class="line"><span class="comment">    树莓派的调整</span></span><br><span class="line"><span class="comment">    继续图着色算法</span></span><br><span class="line"><span class="comment">    看的差不多懂了ARM汇编</span></span><br><span class="line"><span class="comment">    帮忙找了两个bug,会了怎么修改</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><font color="#ff6622">TeamViewer没法链接</font></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>--Daily summary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>每日记录</title>
+    <url>/2020/07/30/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="2020-7-30"><a href="#2020-7-30" class="headerlink" title="2020/7/30"></a>2020/7/30</h1><h2 id="去过的地方"><a href="#去过的地方" class="headerlink" title="去过的地方"></a>去过的地方</h2><ul>
+<li>计算机学院楼</li>
+<li>云天苑餐厅</li>
+<li>宿舍</li>
+</ul>
+<h2 id="今天做了什么"><a href="#今天做了什么" class="headerlink" title="今天做了什么"></a>今天做了什么</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Compiler的图着色算法</span></span><br><span class="line"><span class="comment">// 部署了Hexo,设置了一些细节，评论功能，侧栏，页脚等</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt; <span class="string">&quot;hello&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="明天最想做的事情"><a href="#明天最想做的事情" class="headerlink" title="明天最想做的事情"></a>明天最想做的事情</h2><p>早起！</p>
+<p><img src="1.png" alt="1"></p>
+]]></content>
+      <tags>
+        <tag>--Daily summary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>每日记录-2020/08/01</title>
+    <url>/2020/08/01/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-01/</url>
+    <content><![CDATA[<p>今天早上参加了北大的一个老师的面试，叫做李源老师，问了一下现在在哪里，在干什么，比赛的细节，然后问了本科阶段比赛的经历，比赛的算法的细节，最后问了读博读硕的想法，接下来就该解晓东老师的面试了。</p>
+<a id="more"></a>
+
+<h1 id="每日总结"><a href="#每日总结" class="headerlink" title="每日总结"></a><font color="#19CAAD">每日总结</font></h1><h2 id="今天做了什么"><a href="#今天做了什么" class="headerlink" title="今天做了什么"></a><font color="#BEE7E9">今天做了什么</font></h2><ul>
+<li><font color="#0099ff">Compiler</font></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">今天全天都在找bug</span></span><br><span class="line"><span class="comment">1. return 不对</span></span><br><span class="line"><span class="comment">2. 叶子函数判断不正确</span></span><br><span class="line"><span class="comment">。。。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><font color="#ff6622">HEXO PDF的处理</font>,现在谷歌云盘还是不行，被主动拒绝了</li>
+<li><font color="#ff6622">HEXO尝试了一下动漫小人物，但是没法切换，所以卸载了</font></li>
+<li><font color="#ff3344">英文的简历</font></li>
+</ul>
+<h2 id="今日花费"><a href="#今日花费" class="headerlink" title="今日花费"></a><font color="#BEE7E9">今日花费</font></h2><ul>
+<li>早饭  4.3</li>
+<li>午饭  9.6（饭）+3（雪糕）</li>
+<li>晚饭  2.5+3.7</li>
+</ul>
+<h2 id="明天最想做的事情"><a href="#明天最想做的事情" class="headerlink" title="明天最想做的事情"></a><font color="#BEE7E9">明天最想做的事情</font></h2><p>首先是<strong>早起</strong>，早起做<strong>slam</strong></p>
+]]></content>
+      <tags>
+        <tag>--Daily summary</tag>
+      </tags>
+  </entry>
+</search>
