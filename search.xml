@@ -103,7 +103,7 @@
 </ul>
 </li>
 <li><p><font color="#ff6622">修复字节长度warning</font></p>
-<p>![3][3.png]</p>
+<p><img src="3.png" alt="3"></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">C:\Users\13948\Desktop\C0\Compiler_GIT\liveness.cpp: In <span class="keyword">function</span> <span class="string">&#x27;void solveLiveness(Live_graph*, G_graph, G_table, G_table)&#x27;</span>:</span><br><span class="line">C:\Users\13948\Desktop\C0\Compiler_GIT\liveness.cpp:149:49: warning: cast to pointer from <span class="built_in">integer</span> of different size [-Wint-to-pointer-cast]</span><br><span class="line">             Temp_enterPtr(spillCost, ti, (void*)spills);</span><br><span class="line">                                                 ^~~~~~</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//liviness.cpp</span></span><br><span class="line"><span class="keyword">long</span> spills  ==&gt;  <span class="keyword">long</span> <span class="keyword">long</span> spills</span><br><span class="line"><span class="keyword">void</span>* 为<span class="number">8</span>个字节</span><br></pre></td></tr></table></figure>
