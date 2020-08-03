@@ -3,7 +3,8 @@
   <entry>
     <title>bug修正记录</title>
     <url>/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
+    <content><![CDATA[<p>图着色ppt: <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/">https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/</a></p>
+<h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
       <categories>
         <category>Compiler</category>
         <category>Optimization</category>
@@ -184,5 +185,19 @@
       <tags>
         <tag>Daily Summary</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>韩国比赛</title>
+    <url>/2020/08/03/%E9%9F%A9%E5%9B%BD%E6%AF%94%E8%B5%9B/</url>
+    <content><![CDATA[<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe 
+src="https://www.bilibili.com/video/BV1LK411n7E5/" scrolling="no" border="0" 
+frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
+height: 100%; left: 0; top: 0;"> </iframe></div>
+
+]]></content>
+      <categories>
+        <category>Competiton</category>
+        <category>UAV</category>
+      </categories>
   </entry>
 </search>
