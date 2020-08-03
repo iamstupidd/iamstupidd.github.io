@@ -4,6 +4,11 @@
     <title>bug修正记录</title>
     <url>/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
+      <categories>
+        <category>Compiler</category>
+        <category>Optimization</category>
+        <category>Competition</category>
+      </categories>
   </entry>
   <entry>
     <title>Hello World</title>
