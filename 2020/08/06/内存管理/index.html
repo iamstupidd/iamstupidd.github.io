@@ -22,26 +22,30 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"8.0.0-rc.4","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"path":"search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta name="description" content="&amp;nbsp; &amp;nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。 &amp;nbsp; &amp;nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。">
+  <meta name="description" content="&amp;nbsp; &amp;nbsp; 今天早上初赛结束，所以就休息了一天，在宿舍躺尸了一天。所以顺便想看下C++内存管理的部分，想把这个东西弄得比较透彻吧，今天的内容属于开个头。因为类似的学习文希望显示得优先级高一些，所以就修改了 js 文件，添加了文章优先级排序。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="每日记录-2020-08-03">
-<meta property="og:url" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/index.html">
+<meta property="og:title" content="内存管理">
+<meta property="og:url" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/index.html">
 <meta property="og:site_name" content="Jia PD">
-<meta property="og:description" content="&amp;nbsp; &amp;nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。 &amp;nbsp; &amp;nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。">
+<meta property="og:description" content="&amp;nbsp; &amp;nbsp; 今天早上初赛结束，所以就休息了一天，在宿舍躺尸了一天。所以顺便想看下C++内存管理的部分，想把这个东西弄得比较透彻吧，今天的内容属于开个头。因为类似的学习文希望显示得优先级高一些，所以就修改了 js 文件，添加了文章优先级排序。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/1.png">
-<meta property="og:image" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/2.png">
-<meta property="og:image" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/3.png">
-<meta property="og:image" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/4.png">
-<meta property="og:image" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/5.png">
-<meta property="article:published_time" content="2020-08-02T23:52:33.000Z">
-<meta property="article:modified_time" content="2020-08-03T14:34:32.702Z">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/books.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/memAlloc_layer.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/memAlloc_primitive.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/Sample1.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/new_oriCode.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/operator_new.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/delete_oricode.png">
+<meta property="og:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/构造.png">
+<meta property="article:published_time" content="2020-08-06T14:56:33.000Z">
+<meta property="article:modified_time" content="2020-08-06T17:09:49.849Z">
 <meta property="article:author" content="Jia PD">
-<meta property="article:tag" content="Daily Summary">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="Memory Mangement">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/1.png">
+<meta name="twitter:image" content="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/books.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/">
+<link rel="canonical" href="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
 
 
 <script class="page-configurations">
@@ -54,7 +58,7 @@
   };
 </script>
 
-  <title>每日记录-2020-08-03 | Jia PD</title>
+  <title>内存管理 | Jia PD</title>
   
 
 
@@ -216,7 +220,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ADD-HEXO%EF%BC%9A%E5%9C%A8%E7%BA%BF%E8%81%8A%E5%A4%A9Tidio"><span class="nav-number">1.</span> <span class="nav-text">ADD HEXO：在线聊天Tidio</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Compiler"><span class="nav-number">2.</span> <span class="nav-text">Compiler</span></a></li></ol></div>
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Books"><span class="nav-number">1.</span> <span class="nav-text">Books</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#People"><span class="nav-number">2.</span> <span class="nav-text">People</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#classes"><span class="nav-number">3.</span> <span class="nav-text">classes</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Study-Note"><span class="nav-number">4.</span> <span class="nav-text">Study Note</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -295,7 +299,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/%E8%B4%BE%E6%B2%9B%E4%B8%9C_2017303072.jpg">
@@ -310,20 +314,30 @@
     
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          每日记录-2020-08-03
+          内存管理
         </h1>
 
         <div class="post-meta">
+          
+            <i class="fas fa-thumbtack" style="color:#ff7700"></i>
+            <font color="#ff7700">置顶</font>
+            <span class="post-meta-divider">|</span>
           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-08-03 07:52:33 / Modified: 22:34:32" itemprop="dateCreated datePublished" datetime="2020-08-03T07:52:33+08:00">2020-08-03</time>
+              <time title="Created: 2020-08-06 22:56:33" itemprop="dateCreated datePublished" datetime="2020-08-06T22:56:33+08:00">2020-08-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-08-07 01:09:49" itemprop="dateModified" datetime="2020-08-07T01:09:49+08:00">2020-08-07</time>
+              </span>
 
           
             <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
@@ -341,8 +355,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -355,36 +369,38 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>&nbsp; &nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。</p>
-<p>&nbsp; &nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。</p>
+        <p>&nbsp; &nbsp; 今天早上初赛结束，所以就休息了一天，在宿舍躺尸了一天。所以顺便想看下C++内存管理的部分，想把这个东西弄得比较透彻吧，今天的内容属于开个头。因为类似的学习文希望显示得优先级高一些，所以就修改了 js 文件，添加了文章优先级排序。</p>
 <a id="more"></a>
 
-<p><img src="1.png" alt="1"></p>
-<h2 id="ADD-HEXO：在线聊天Tidio"><a href="#ADD-HEXO：在线聊天Tidio" class="headerlink" title="ADD HEXO：在线聊天Tidio"></a><font color="#BEE7E9">ADD HEXO：在线聊天Tidio</font></h2><ol>
-<li><p><font color="#ff6622">代码</font></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 214-221</span></span><br><span class="line"><span class="comment"># A button to open designated chat widget in sidebar.</span></span><br><span class="line"><span class="comment"># Firstly, you need enable the chat service you want to activate its sidebar button.</span></span><br><span class="line"><span class="attr">chat:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#service: chatra</span></span><br><span class="line">  <span class="attr">service:</span> <span class="string">tidio</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-comment</span> <span class="comment"># Icon name in Font Awesome, set false to disable icon.</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">Chat</span> <span class="comment"># Button text, change it as you wish.</span></span><br></pre></td></tr></table></figure>
+<h2 id="Books"><a href="#Books" class="headerlink" title="Books"></a>Books</h2><center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="books.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">1. </font>相关书籍</div> </center>
 
-
-
-</li>
-</ol>
-   <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 766-771</span></span><br><span class="line"><span class="comment"># Tidio Support</span></span><br><span class="line"><span class="comment"># See: https://www.tidiochat.com</span></span><br><span class="line"><span class="comment"># Dashboard: https://www.tidiochat.com/panel/dashboard</span></span><br><span class="line"><span class="attr">tidio:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">key:</span> <span class="string">xhf2buz63zl56r6o3xy4hkep9gznwevf</span> <span class="comment"># Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><font color="#ff6622">实现效果</font></li>
-</ol>
-<ul>
-<li><p><font color="#ff8899">侧栏</font></p>
-<p><img src="2.png" alt="2"></p>
-</li>
-<li><p><font color="#ff8899">右下角聊天框</font></p>
-<p><img src="3.png" alt="3"></p>
-</li>
+<h2 id="People"><a href="#People" class="headerlink" title="People"></a>People</h2><ul>
+<li>${Doug}$ ${Lea}$</li>
 </ul>
-<h2 id="Compiler"><a href="#Compiler" class="headerlink" title="Compiler"></a><font color="#BEE7E9">Compiler</font></h2><p>&nbsp; &nbsp;  今天把regalloc 和 color彻底盘了一遍，没有任何问题。在修改了codegen和arm_frame的问题之后，终于呀终于呀把功能测试AC了</p>
-<p><img src="4.png" alt="4"></p>
-<p><img src="5.png" alt="5"></p>
+<h2 id="classes"><a href="#classes" class="headerlink" title="classes"></a>classes</h2><ul>
+<li>侯捷：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kb411B7N8">https://www.bilibili.com/video/BV1Kb411B7N8</a></li>
+</ul>
+<h2 id="Study-Note"><a href="#Study-Note" class="headerlink" title="Study Note"></a>Study Note</h2><p>&nbsp; &nbsp; 因为要去学内存管理，所以肯定要了解要调用什么去管理，而这些函数或者是关键字都是有层次关系的。</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="memAlloc_layer.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">2. </font>不同层次的分配</div> </center>
 
+<p>&nbsp; &nbsp; 而作为一名一直使用c++的小coder ,我一般使用的就是 ${\small cpp}$  ${\small permitives}$ 部分，具体相关函数及特性如下。</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="memAlloc_primitive.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">3. </font>C++ primitive</div> </center>
+
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="Sample1.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">4. </font>所有的内存分配方式测例</div> </center>
+
+<p>&nbsp; &nbsp; 这几个层次之间的关系之前的图说的比较清楚，但是一般程序员嘛，看不到源码不死心，所以看一下 ${\small  new}$ 的源码。</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="new_oriCode.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">5. </font>new函数源码</div> </center>
+
+<p>其中调用了 ${\small operator new}$  这个函数,是在这个函数里面调用了 ${\small malloc}$ 函数。</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="operator_new.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">6. </font>operator new函数源码</div> </center>
+
+
+
+<p>&nbsp; &nbsp; ${\small delete}$ 函数类似，最终调用了 ${\small free}$ 函数。</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="delete_oricode.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">7. </font>delete函数源码</div> </center>
+
+<p>&nbsp; &nbsp; ${\small new}$ 中使用了${\small new}$出来的变量显式调用构造函数的表达式。这个表达式作为程序员是不能调用的，但是程序员可以显式调用析构函数。</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="构造.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">8. </font>构造函数不可显式调用</div> </center>
     </div>
 
     
@@ -393,7 +409,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Daily-Summary/" rel="tag"># Daily Summary</a>
+              <a href="/tags/C/" rel="tag"># C++</a>
+              <a href="/tags/Memory-Mangement/" rel="tag"># Memory Mangement</a>
           </div>
 
         
@@ -402,12 +419,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/08/02/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-02/" rel="prev" title="每日记录-2020/08/02">
-      <i class="fa fa-chevron-left"></i> 每日记录-2020/08/02
+    <a href="/2020/08/05/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-05/" rel="prev" title="今日记录-2020-08-05">
+      <i class="fa fa-chevron-left"></i> 今日记录-2020-08-05
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/" rel="next" title="bug修正记录">
-      bug修正记录 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/08/07/LaTex%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA/" rel="next" title="LaTex公式显示">
+      LaTex公式显示 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -561,6 +578,59 @@ document.querySelectorAll('.pdfobject-container').forEach(element => {
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      const script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
