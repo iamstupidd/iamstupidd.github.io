@@ -3,12 +3,16 @@
   <entry>
     <title>bug修正记录</title>
     <url>/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>图着色ppt: <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/">https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/</a></p>
+    <content><![CDATA[<p>&nbsp; &nbsp; 所有的编译器比赛期间的bug记录</p>
+<a id="more"></a>
+
+<p>图着色ppt: <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/">https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/</a></p>
 <h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
       <categories>
         <category>Compiler</category>
         <category>Optimization</category>
         <category>Competition</category>
+        <category>Compiler</category>
       </categories>
   </entry>
   <entry>
@@ -32,7 +36,8 @@
   <entry>
     <title>每日记录-2020/07/31</title>
     <url>/2020/07/31/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-07-31/</url>
-    <content><![CDATA[<h2 id="果然还是没能早点起来。。。。9：20"><a href="#果然还是没能早点起来。。。。9：20" class="headerlink" title="果然还是没能早点起来。。。。9：20"></a>果然还是没能早点起来。。。。9：20</h2><a id="more"></a>
+    <content><![CDATA[<p>&nbsp; &nbsp; 果然还是没能早点起来。。。。9：20</p>
+<a id="more"></a>
 
 <p><img src="1.png" alt="1"></p>
 <h2 id="今天做了什么"><a href="#今天做了什么" class="headerlink" title="今天做了什么"></a>今天做了什么</h2><ul>
@@ -201,8 +206,13 @@
   </entry>
   <entry>
     <title>韩国比赛</title>
-    <url>/2020/08/03/%E9%9F%A9%E5%9B%BD%E6%AF%94%E8%B5%9B/</url>
-    <content><![CDATA[<div style="position: relative; width: 85%; height: 0; padding-bottom: 75%;"><iframe 
+    <url>/2020/08/03/%E9%9F%A9%E5%9B%BD%E6%AF%94%E8%B5%9B-2019-08-05/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 我认为最难的竞赛是无人机平台下的无人机竞速比赛。这个比赛的目的是为了构建一个能够用于3D赛道上基于视觉的自动导航系统，完成的功能有巡航，避障，起飞降落，检测特征点等。这个比赛的难点有电脑端与无人机端的数据交互，这个我们是基于Ros的框架进行的，对这个框架的学习，包括通信机制，节点管理等，主要是通过ROS的教程与样例完成学习，然后统一制定一个规范，保证代码风格的统一。另外在避障方面，主要是处理场外干扰的因素，然后另外要区分障碍的深度问题。在起飞降落中，主要做的是顺滑平稳，采用了PID的控制方法和YOLO框架来识别降落点。</p>
+<p>&nbsp; &nbsp; 到了真正的比赛场地，实际遇到的问题是这个信息交互是通过wifi实现的，但是比赛场地wifi信号多而杂，会导致图传等问题有延迟卡顿，我们解决的主要方式是先讨论一下其他连接方式，蓝牙，Zigbee等，确定短时间内无法更换或无法满足需求；然后希望能够增强自己的wifi信号来达到目的，稳定性不强；最后看了wifi相关参数，发现wifi频段和信道问题的影响，现在绝大多数设备的wifi频段集中于2.4G，而我们只要电脑和无人机都wifi的支持5G频段即可避免信道冲突，达到目的。另外有光流漂移的问题，主要是通过增加光流标志点实现的。</p>
+<p><font color="#ff7700">(含比赛视频)</font></p>
+<a id="more"></a>
+
+<div style="position: relative; width: 85%; height: 0; padding-bottom: 75%;"><iframe 
 src="https://www.bilibili.com/video/BV1LK411n7E5/" scrolling="no" border="0" 
 frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; 
 height: 100%; left: 0; top: 0;"> </iframe></div>
