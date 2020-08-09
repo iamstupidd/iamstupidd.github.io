@@ -24,6 +24,52 @@
       </tags>
   </entry>
   <entry>
+    <title>OS--DAY1</title>
+    <url>/2020/08/09/OS-DAY1/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 今天的进度有点慢，操作系统复习了一些 9 / 68，SLAM看了一篇中文综述，但是看不太懂，加油加油，PKU，我的梦想，我愿意为你奋斗！</p>
+<a id="more"></a>
+
+<h2 id="课程总结"><a href="#课程总结" class="headerlink" title="课程总结"></a><font color="#F4606C">课程总结</font></h2><p><img src="1.png" alt="1"></p>
+<h2 id="可能的问题"><a href="#可能的问题" class="headerlink" title="可能的问题"></a><font color="#F4606C">可能的问题</font></h2><h3 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a><font color="#E6CEAC">1.1</font></h3><ul>
+<li>简述一下冯诺依曼结构</li>
+<li>简述一下图灵机</li>
+<li>操作系统是什么，阐述一下</li>
+<li>具体说明一下定义中的三条信息</li>
+</ul>
+<h3 id="1-2"><a href="#1-2" class="headerlink" title="1.2"></a><font color="#E6CEAC">1.2</font></h3><ul>
+<li>操作系统有哪些特征，并简要说明</li>
+<li>其中最基本的特征是什么？</li>
+</ul>
+<h3 id="1-3"><a href="#1-3" class="headerlink" title="1.3"></a><font color="#E6CEAC">1.3</font></h3><ul>
+<li>讲一下操作系统的发展历史吧</li>
+<li>阐述一下不同时期操作系统的优缺点</li>
+</ul>
+<h3 id="1-4"><a href="#1-4" class="headerlink" title="1.4"></a><font color="#E6CEAC">1.4</font></h3><ul>
+<li>最近微内核很火，简单介绍一下微内核和强内核的定义以及优缺点吧</li>
+<li>举几个例子</li>
+<li>核心态和用户态的区别</li>
+<li>指令的分类和阐述</li>
+</ul>
+<h3 id="1-5"><a href="#1-5" class="headerlink" title="1.5"></a><font color="#E6CEAC">1.5</font></h3><ul>
+<li>简单讲一下中断吧（意义，分类，分类的举例）</li>
+<li>用户态 &lt;—-&gt; 核心态的转换方式</li>
+<li>外中断的处理过程</li>
+</ul>
+<h3 id="1-6"><a href="#1-6" class="headerlink" title="1.6"></a><font color="#E6CEAC">1.6</font></h3><ul>
+<li>简单叙述一下系统调用（定义，意义，分类，过程）</li>
+<li>与库函数之间的关系</li>
+</ul>
+<h3 id="1-7"><a href="#1-7" class="headerlink" title="1.7"></a><font color="#E6CEAC">1.7</font></h3><ul>
+<li>简单说一下对进程的理解（定义，进程实体，组织方式）</li>
+<li>进程有哪些特点</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>冲刺研究生</tag>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>bug修正记录</title>
     <url>/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; 所有的编译器比赛期间的bug记录</p>
@@ -67,9 +113,12 @@
 <p>c++：<a href="https://visualstudiomagazine.com/articles/2016/10/01/default-arguments-and-overloading.aspx">https://visualstudiomagazine.com/articles/2016/10/01/default-arguments-and-overloading.aspx</a></p>
 <p>网络：<a href="https://www.sciencedirect.com/journal/computer-networks/special-issues">https://www.sciencedirect.com/journal/computer-networks/special-issues</a></p>
 <p><a href="https://biztechmagazine.com/software">https://biztechmagazine.com/software</a></p>
-<h2 id="九推计划-–-2020-08-09"><a href="#九推计划-–-2020-08-09" class="headerlink" title="九推计划 – 2020/08/09"></a>九推计划 – 2020/08/09</h2><p><font color="#ff7700">3 Day</font>: 我打算先把自己的研究方向的综述<strong>英文</strong>读个<strong>三篇</strong>，<strong>中文</strong>读个<strong>两篇</strong>。高翔slam14讲<strong>前后端</strong>听完，并做笔记。</p>
-<p><font color="#7799ff">配套资料</font>:视觉SLAM十四讲书籍，</p>
-<p> 转眼来到了 <font color="#ff7700">2020/08/12 </font></p>
+<p>运动一个小时</p>
+<p>整理房间20min</p>
+<h2 id="九推计划-–-2020-08-09"><a href="#九推计划-–-2020-08-09" class="headerlink" title="九推计划 – 2020/08/09"></a>九推计划 – 2020/08/09</h2><p><font color="#ff0000">所有时间提前三天,SLAM作为学习后的甜点</font></p>
+<p><S><font color="#ff7700">3 Day</font>: 我打算先把自己的研究方向的综述<strong>英文</strong>读个<strong>三篇</strong>，<strong>中文</strong>读个<strong>两篇</strong>。高翔slam14讲<strong>前后端</strong>听完，并做笔记。</S></p>
+<p><S><font color="#7799ff">配套资料</font>:视觉SLAM十四讲书籍</S></p>
+<p> <S>转眼来到了 <font color="#ff7700">2020/08/12 </font></S></p>
 <hr />
 
 <p><font color="#ff7700">2 Day</font>: 王道考研的计算机操作系统课程 68节课，并背诵ppt, 串联知识点。</p>
@@ -335,92 +384,52 @@
   <entry>
     <title>英语短文翻译-2020-08-09</title>
     <url>/2020/08/09/%E8%8B%B1%E8%AF%AD%E7%9F%AD%E6%96%87%E7%BF%BB%E8%AF%91-2020-08-09/</url>
-    <content><![CDATA[<p> Augmented reality (AR) is a technique that allows to seamlessly composite virtual objects or information into real scene. Compared to traditional text, images and videos, AR is a more effective and intuitive way for information presentation and has wide applications. Simultaneous localization and mapping (SLAM) is a key fundamental technique for augmented reality, which provides the ability of self-localization in an unknown environment and mapping the 3D environment simultaneously. The localization and mapping enables fusion of virtual objects and real scenes in a geometrically consistent way. In this paper, we describe the basic principles of Visual SLAM, and introduce some state-of-the-art monocular SLAM methods with deep analysis and comparison. Finally, we discuss some research tendency in recent years and make conclusions. </p>
-<!DOCTYPE html>
-<html lang="en">
+    <content><![CDATA[<html>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <!--
-        方法一：定位
-    -->
- <style>
+<style>
         .wrap{
-            width:900px;
             margin:0 auto;
-            position: relative;
+            width:100%;
         }
         #left{
-            width:200px;
-            height:500px;
-            background: #ccffff;
-            position: absolute;
-            top:0;
-            left:0;
-        }
-        #right{
-            width:700px;
-            height:500px;
-            background: #ffcccc;
-            position: absolute;
-            top:0;
-            right:0;
-        }
-    </style>
- <!--
-       方法二： 纯浮动式
-    -->
- <style>
-        .wrap{
-            width:900px;
-            margin:0 auto;
-            overflow: hidden;
-        }
-        #left{
-            width:200px;
-            height:500px;
+            width:400px;
+            height:800px;
             background: #ccffff;
             float: left;
         }
         #right{
-            width:700px;
-            height:500px;
+            height: 800px;
             background: #ffcccc;
-            float: left;
+            margin-left:50px;
         }
     </style>
-<!--
-       方法三： 混合浮动+普通流
-    -->
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .wrap{
-            margin:0 auto;
-            width:80%;
-        }
-        #left{
-            width:200px;
-            height:500px;
-            background: #ccffff;
-            float: left;
-        }
-        #right{
-            height: 500px;
-            background: #ffcccc;
-            margin-left:200px;
-        }
-    </style>
 </head>
 <body>
 <div class="wrap">
-    <aside id="left"></aside>
-    <section id="right"></section>
+    <aside id="left">
+        <p font-family:"Fira Code";>
+Abstract: Augmented reality (AR) is a technique that allows to seamlessly composite virtual objects or information into real scene. Compared to traditional text, images and videos, AR is a more effective and intuitive way for
+information presentation and has wide applications. Simultaneous localization and mapping (SLAM) is a key
+fundamental technique for augmented reality, which provides the ability of self-localization in an unknown environment and mapping the 3D environment simultaneously. The localization and mapping enables fusion of virtual
+objects and real scenes in a geometrically consistent way. In this paper, we describe the basic principles of Visual
+SLAM, and introduce some state-of-the-art monocular SLAM methods with deep analysis and comparison. Finally, we discuss some research tendency in recent years and make conclusions. 
+        </p>
+    </aside>
+    <section id="right">
+        <p>
+   摘 要: 增强现实是一种在现实场景中无缝地融入虚拟物体或信息的技术, 能够比传统的文字、图像和视频等方式
+更高效、直观地呈现信息，有着非常广泛的应用. 同时定位与地图构建作为增强现实的关键基础技术, 可以用来在未
+知环境中定位自身方位并同时构建环境三维地图, 从而保证叠加的虚拟物体与现实场景在几何上的一致性. 文中首
+先简述基于视觉的同时定位与地图构建的基本原理; 然后介绍几个代表性的基于单目视觉的同时定位与地图构建方
+法并做深入分析和比较; 最后讨论近年来研究热点和发展趋势, 并做总结和展望. 
+        </p>
+    </section>
 </div>
 </body>
+
 </html>
 
 ]]></content>
