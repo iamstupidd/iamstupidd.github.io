@@ -57,6 +57,56 @@
 ]]></content>
   </entry>
   <entry>
+    <title>九推复习计划</title>
+    <url>/2020/08/09/%E4%B9%9D%E6%8E%A8%E5%A4%8D%E4%B9%A0%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 之前一直在想为什么996工作的人一直在抱怨，我们上课不也是很长时间么。现在才知道，真的很累，剩下的时间只想娱乐，不想复习，提升自己。但是，我的九推已经近在眼前了，所以我一定要抓紧时间复习专业课和我的数学课，组织自己的语言，加油加油，Fighting Fighting Go !!! </p>
+<a id="more"></a>
+
+<h2 id="每日任务"><a href="#每日任务" class="headerlink" title="每日任务"></a>每日任务</h2><p>七点前，阅读一篇英语短文 500词左右，熟读，并快速翻译</p>
+<p><font color="#7799ff">配套资料</font>:</p>
+<p>c++：<a href="https://visualstudiomagazine.com/articles/2016/10/01/default-arguments-and-overloading.aspx">https://visualstudiomagazine.com/articles/2016/10/01/default-arguments-and-overloading.aspx</a></p>
+<p>网络：<a href="https://www.sciencedirect.com/journal/computer-networks/special-issues">https://www.sciencedirect.com/journal/computer-networks/special-issues</a></p>
+<p><a href="https://biztechmagazine.com/software">https://biztechmagazine.com/software</a></p>
+<h2 id="九推计划-–-2020-08-09"><a href="#九推计划-–-2020-08-09" class="headerlink" title="九推计划 – 2020/08/09"></a>九推计划 – 2020/08/09</h2><p><font color="#ff7700">3 Day</font>: 我打算先把自己的研究方向的综述<strong>英文</strong>读个<strong>三篇</strong>，<strong>中文</strong>读个<strong>两篇</strong>。高翔slam14讲<strong>前后端</strong>听完，并做笔记。</p>
+<p><font color="#7799ff">配套资料</font>:视觉SLAM十四讲书籍，</p>
+<p> 转眼来到了 <font color="#ff7700">2020/08/12 </font></p>
+<hr />
+
+<p><font color="#ff7700">2 Day</font>: 王道考研的计算机操作系统课程 68节课，并背诵ppt, 串联知识点。</p>
+<p><font color="#7799ff">配套资料</font>:西电操作系统</p>
+<p>转眼来到了 <font color="#ff7700">2020/08/14</font></p>
+<hr />
+
+<p><font color="#ff7700">2 Day</font>: 王道考研的计算机网络课程 74节课，并背诵ppt, 串联知识点。</p>
+<p><font color="#7799ff">配套资料</font>：西电网络课本</p>
+<p>转眼来到了 <font color="#ff7700">2020/08/16</font></p>
+<hr />
+
+<p><font color="#ff7700">2 Day</font>: MIT的线性代数课程35节课，并背诵宋浩老师的ppt, 串联知识点。</p>
+<p><font color="#7799ff">配套资料</font>:西工大线性代数教材</p>
+<p>转眼来到了 <font color="#ff7700">2020/08/18</font></p>
+<hr /> 
+
+<p><font color="#ff7700">2 Day</font>:宋浩老师的概率论与数理统计课程126节课，并背诵宋浩老师的ppt, 串联知识点。</p>
+<p><font color="#7799ff">配套资料</font>:高等教育概率论教材</p>
+<p>转眼来到了 <font color="#ff7700">2020/08/20</font></p>
+<hr />
+
+<p><font color="#ff7700">2 Day</font>:复习离散数学，计算机组成原理，编译原理，数据库的基本概念。</p>
+<p><font color="#7799ff">配套资料</font>:西电离散数学，计组唐朔飞，</p>
+<p>转眼来到了 <font color="#ff7700">2020/08/22</font></p>
+<hr />
+
+<p><font color="#ff7700">4 Day</font>: 刷题，并总结算法，凝练语言</p>
+<p><font color="#7799ff">配套资料</font>:编程之美，剑指offer，LEETCODE，百炼OJ，<a href="http://www.noobdream.com/">http://www.noobdream.com/</a></p>
+<p>转眼来到了 <font color="#ff7700">2020/08/26</font></p>
+<p>关注九推，疯狂报名</p>
+]]></content>
+      <tags>
+        <tag>冲刺研究生</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>内存管理</title>
     <url>/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; 今天早上初赛结束，所以就休息了一天，在宿舍躺尸了一天。所以顺便想看下C++内存管理的部分，想把这个东西弄得比较透彻吧，今天的内容属于开个头。因为类似的学习文希望显示得优先级高一些，所以就修改了 js 文件，添加了文章优先级排序。</p>
