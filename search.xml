@@ -333,6 +333,102 @@
       </tags>
   </entry>
   <entry>
+    <title>英语短文翻译-2020-08-09</title>
+    <url>/2020/08/09/%E8%8B%B1%E8%AF%AD%E7%9F%AD%E6%96%87%E7%BF%BB%E8%AF%91-2020-08-09/</url>
+    <content><![CDATA[<p> Augmented reality (AR) is a technique that allows to seamlessly composite virtual objects or information into real scene. Compared to traditional text, images and videos, AR is a more effective and intuitive way for information presentation and has wide applications. Simultaneous localization and mapping (SLAM) is a key fundamental technique for augmented reality, which provides the ability of self-localization in an unknown environment and mapping the 3D environment simultaneously. The localization and mapping enables fusion of virtual objects and real scenes in a geometrically consistent way. In this paper, we describe the basic principles of Visual SLAM, and introduce some state-of-the-art monocular SLAM methods with deep analysis and comparison. Finally, we discuss some research tendency in recent years and make conclusions. </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!--
+        方法一：定位
+    -->
+ <style>
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            position: relative;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background: #ccffff;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        #right{
+            width:700px;
+            height:500px;
+            background: #ffcccc;
+            position: absolute;
+            top:0;
+            right:0;
+        }
+    </style>
+ <!--
+       方法二： 纯浮动式
+    -->
+ <style>
+        .wrap{
+            width:900px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background: #ccffff;
+            float: left;
+        }
+        #right{
+            width:700px;
+            height:500px;
+            background: #ffcccc;
+            float: left;
+        }
+    </style>
+<!--
+       方法三： 混合浮动+普通流
+    -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrap{
+            margin:0 auto;
+            width:80%;
+        }
+        #left{
+            width:200px;
+            height:500px;
+            background: #ccffff;
+            float: left;
+        }
+        #right{
+            height: 500px;
+            background: #ffcccc;
+            margin-left:200px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <aside id="left"></aside>
+    <section id="right"></section>
+</div>
+</body>
+</html>
+
+]]></content>
+      <tags>
+        <tag>English</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>韩国比赛</title>
     <url>/2020/08/03/%E9%9F%A9%E5%9B%BD%E6%AF%94%E8%B5%9B-2019-08-05/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; 我认为最难的竞赛是无人机平台下的无人机竞速比赛。这个比赛的目的是为了构建一个能够用于3D赛道上基于视觉的自动导航系统，完成的功能有巡航，避障，起飞降落，检测特征点等。这个比赛的难点有电脑端与无人机端的数据交互，这个我们是基于Ros的框架进行的，对这个框架的学习，包括通信机制，节点管理等，主要是通过ROS的教程与样例完成学习，然后统一制定一个规范，保证代码风格的统一。另外在避障方面，主要是处理场外干扰的因素，然后另外要区分障碍的深度问题。在起飞降落中，主要做的是顺滑平稳，采用了PID的控制方法和YOLO框架来识别降落点。</p>
