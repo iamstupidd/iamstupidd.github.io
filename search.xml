@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>LaTex公式显示</title>
+    <url>/2020/08/07/LaTex%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; Hexo的Latex显示处理，我用的是next 6.13.4。主要是网上的教程大多是换一个渲染引擎，其实完全没有必要。Next还是很强大的。</p>
+<a id="more"></a>
+
+<ol>
+<li>首先是主题下面的设置文件(${\small ~\themes\next\_config.yml}$) math部分设置如下。</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Math Formulas Render Support</span></span><br><span class="line"><span class="comment"># Server-side plugin: https://github.com/next-theme/hexo-filter-mathjax</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="comment"># Default (true) will load mathjax / katex script on demand.</span></span><br><span class="line">  <span class="comment"># That is it only render those page which has `mathjax: true` in Front-matter.</span></span><br><span class="line">  <span class="comment"># If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.</span></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex</span></span><br><span class="line">    <span class="attr">copy_tex:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>在需要latex公式处理的md文章中添加 ${\small mathjax: true}$ </p>
+</li>
+<li><p>结果如图</p>
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="1.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">1. </font>Latex公式支持</div> </center></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>日常维护</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linear Algebra--1</title>
     <url>/2020/09/01/Linear-Algebra-1/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; 线性代数其实是从多变量的线性方程组引入的，多变量的线性方程组 ${\small A\textit{x} = b}$ 怎么样去理解，从 ${\small Row}$ 的方向去理解，就是超平面的交集，从 ${\small Column}$ 的角度看就是 ${\small A}$ 的 ${\small Column}$ 的 ${\small \textit{x}}$ 中每个变量的线性组合。然后解这个方程组的话，最朴素的想法就是消元嘛，然后消元这个过程又可以使用矩阵乘法来表示，于是就引入了矩阵的乘法以及乘法的法则。矩阵的乘法（ ${\small AB}$ ）从点积的角度去理解，就只能理解到它的计算法则；从 ${\small Row}$ 的角度看， ${\small AB}$ 的每一个 ${\small Row}$ 就是 ${\small B}$ 的 ${\small Row}$ 的线性组合；从 ${\small column}$ 的角度看， ${\small AB}$ 的每一个 ${\small column}$ 就是 ${\small A}$ 的 ${\small column}$ 的线性组合；从 ${\small column * Row}$ 看就能看出来，分块进行消元法的实质，从而引入了矩阵的逆。</p>
@@ -29,27 +52,9 @@
       </tags>
   </entry>
   <entry>
-    <title>LaTex公式显示</title>
-    <url>/2020/08/07/LaTex%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp; Hexo的Latex显示处理，我用的是next 6.13.4。主要是网上的教程大多是换一个渲染引擎，其实完全没有必要。Next还是很强大的。</p>
-<a id="more"></a>
-
-<ol>
-<li>首先是主题下面的设置文件(${\small ~\themes\next\_config.yml}$) math部分设置如下。</li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Math Formulas Render Support</span></span><br><span class="line"><span class="comment"># Server-side plugin: https://github.com/next-theme/hexo-filter-mathjax</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="comment"># Default (true) will load mathjax / katex script on demand.</span></span><br><span class="line">  <span class="comment"># That is it only render those page which has `mathjax: true` in Front-matter.</span></span><br><span class="line">  <span class="comment"># If you set it to false, it will load mathjax / katex srcipt EVERY PAGE.</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-pandoc (or hexo-renderer-kramed) required for full MathJax support.</span></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) required for full Katex support.</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment"># See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex</span></span><br><span class="line">    <span class="attr">copy_tex:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>在需要latex公式处理的md文章中添加 ${\small mathjax: true}$ </p>
-</li>
-<li><p>结果如图</p>
-<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="1.png"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">1. </font>Latex公式支持</div> </center></li>
-</ol>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>日常维护</tag>
-      </tags>
+    <title>NetWork--DAY1</title>
+    <url>/2020/08/17/NetWork-DAY1/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>OS--DAY1</title>
@@ -96,11 +101,6 @@
         <tag>冲刺研究生</tag>
         <tag>操作系统</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>NetWork--DAY1</title>
-    <url>/2020/08/17/NetWork-DAY1/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>OS--DAY2</title>
@@ -394,19 +394,6 @@
       </tags>
   </entry>
   <entry>
-    <title>文章置顶</title>
-    <url>/2020/08/07/%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp; 添加文章置顶功能，但是在安装卸载渲染引擎后会<font color="#ff7700">失效</font>。</p>
-<a id="more"></a>
-
-<p>手动改js: <a href="https://www.jianshu.com/p/42a4efcdf8d7">https://www.jianshu.com/p/42a4efcdf8d7</a></p>
-<p>然后修改渲染：<a href="https://blog.csdn.net/qwerty200696/article/details/79010629">https://blog.csdn.net/qwerty200696/article/details/79010629</a></p>
-]]></content>
-      <tags>
-        <tag>日常维护</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>内存管理</title>
     <url>/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; 今天早上初赛结束，所以就休息了一天，在宿舍躺尸了一天。所以顺便想看下C++内存管理的部分，想把这个东西弄得比较透彻吧，今天的内容属于开个头。因为类似的学习文希望显示得优先级高一些，所以就修改了 js 文件，添加了文章优先级排序。</p>
@@ -446,6 +433,19 @@
       <tags>
         <tag>C++</tag>
         <tag>Memory Mangement</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文章置顶</title>
+    <url>/2020/08/07/%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 添加文章置顶功能，但是在安装卸载渲染引擎后会<font color="#ff7700">失效</font>。</p>
+<a id="more"></a>
+
+<p>手动改js: <a href="https://www.jianshu.com/p/42a4efcdf8d7">https://www.jianshu.com/p/42a4efcdf8d7</a></p>
+<p>然后修改渲染：<a href="https://blog.csdn.net/qwerty200696/article/details/79010629">https://blog.csdn.net/qwerty200696/article/details/79010629</a></p>
+]]></content>
+      <tags>
+        <tag>日常维护</tag>
       </tags>
   </entry>
   <entry>
@@ -492,43 +492,6 @@
 <li>晚饭  2.5+3.7</li>
 </ul>
 <h2 id="明天最想做的事情"><a href="#明天最想做的事情" class="headerlink" title="明天最想做的事情"></a><font color="#BEE7E9">明天最想做的事情</font></h2><p>首先是<strong>早起</strong>，早起做<strong>slam</strong></p>
-]]></content>
-      <tags>
-        <tag>Daily Summary</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>每日记录-2020-08-03</title>
-    <url>/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。</p>
-<p>&nbsp; &nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。</p>
-<a id="more"></a>
-
-<p><img src="1.png" alt="1"></p>
-<h2 id="ADD-HEXO：在线聊天Tidio"><a href="#ADD-HEXO：在线聊天Tidio" class="headerlink" title="ADD HEXO：在线聊天Tidio"></a><font color="#BEE7E9">ADD HEXO：在线聊天Tidio</font></h2><ol>
-<li><p><font color="#ff6622">代码</font></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 214-221</span></span><br><span class="line"><span class="comment"># A button to open designated chat widget in sidebar.</span></span><br><span class="line"><span class="comment"># Firstly, you need enable the chat service you want to activate its sidebar button.</span></span><br><span class="line"><span class="attr">chat:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#service: chatra</span></span><br><span class="line">  <span class="attr">service:</span> <span class="string">tidio</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-comment</span> <span class="comment"># Icon name in Font Awesome, set false to disable icon.</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">Chat</span> <span class="comment"># Button text, change it as you wish.</span></span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-   <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 766-771</span></span><br><span class="line"><span class="comment"># Tidio Support</span></span><br><span class="line"><span class="comment"># See: https://www.tidiochat.com</span></span><br><span class="line"><span class="comment"># Dashboard: https://www.tidiochat.com/panel/dashboard</span></span><br><span class="line"><span class="attr">tidio:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">key:</span> <span class="string">xhf2buz63zl56r6o3xy4hkep9gznwevf</span> <span class="comment"># Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><font color="#ff6622">实现效果</font></li>
-</ol>
-<ul>
-<li><p><font color="#ff8899">侧栏</font></p>
-<p><img src="2.png" alt="2"></p>
-</li>
-<li><p><font color="#ff8899">右下角聊天框</font></p>
-<p><img src="3.png" alt="3"></p>
-</li>
-</ul>
-<h2 id="Compiler"><a href="#Compiler" class="headerlink" title="Compiler"></a><font color="#BEE7E9">Compiler</font></h2><p>&nbsp; &nbsp;  今天把regalloc 和 color彻底盘了一遍，没有任何问题。在修改了codegen和arm_frame的问题之后，终于呀终于呀把功能测试AC了</p>
-<p><img src="4.png" alt="4"></p>
-<p><img src="5.png" alt="5"></p>
 ]]></content>
       <tags>
         <tag>Daily Summary</tag>
@@ -590,17 +553,37 @@
       </tags>
   </entry>
   <entry>
-    <title>每日记录</title>
-    <url>/2020/07/30/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<h1 id="2020-7-30"><a href="#2020-7-30" class="headerlink" title="2020/7/30"></a>2020/7/30</h1><h2 id="去过的地方"><a href="#去过的地方" class="headerlink" title="去过的地方"></a>去过的地方</h2><ul>
-<li>计算机学院楼</li>
-<li>云天苑餐厅</li>
-<li>宿舍</li>
-</ul>
-<h2 id="今天做了什么"><a href="#今天做了什么" class="headerlink" title="今天做了什么"></a>今天做了什么</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Compiler的图着色算法</span></span><br><span class="line"><span class="comment">// 部署了Hexo,设置了一些细节，评论功能，侧栏，页脚等</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt; <span class="string">&quot;hello&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>每日记录-2020-08-03</title>
+    <url>/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。</p>
+<p>&nbsp; &nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。</p>
 <a id="more"></a>
-<h2 id="明天最想做的事情"><a href="#明天最想做的事情" class="headerlink" title="明天最想做的事情"></a>明天最想做的事情</h2><p>早起！</p>
+
 <p><img src="1.png" alt="1"></p>
+<h2 id="ADD-HEXO：在线聊天Tidio"><a href="#ADD-HEXO：在线聊天Tidio" class="headerlink" title="ADD HEXO：在线聊天Tidio"></a><font color="#BEE7E9">ADD HEXO：在线聊天Tidio</font></h2><ol>
+<li><p><font color="#ff6622">代码</font></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 214-221</span></span><br><span class="line"><span class="comment"># A button to open designated chat widget in sidebar.</span></span><br><span class="line"><span class="comment"># Firstly, you need enable the chat service you want to activate its sidebar button.</span></span><br><span class="line"><span class="attr">chat:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#service: chatra</span></span><br><span class="line">  <span class="attr">service:</span> <span class="string">tidio</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-comment</span> <span class="comment"># Icon name in Font Awesome, set false to disable icon.</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">Chat</span> <span class="comment"># Button text, change it as you wish.</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+   <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 766-771</span></span><br><span class="line"><span class="comment"># Tidio Support</span></span><br><span class="line"><span class="comment"># See: https://www.tidiochat.com</span></span><br><span class="line"><span class="comment"># Dashboard: https://www.tidiochat.com/panel/dashboard</span></span><br><span class="line"><span class="attr">tidio:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">key:</span> <span class="string">xhf2buz63zl56r6o3xy4hkep9gznwevf</span> <span class="comment"># Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><font color="#ff6622">实现效果</font></li>
+</ol>
+<ul>
+<li><p><font color="#ff8899">侧栏</font></p>
+<p><img src="2.png" alt="2"></p>
+</li>
+<li><p><font color="#ff8899">右下角聊天框</font></p>
+<p><img src="3.png" alt="3"></p>
+</li>
+</ul>
+<h2 id="Compiler"><a href="#Compiler" class="headerlink" title="Compiler"></a><font color="#BEE7E9">Compiler</font></h2><p>&nbsp; &nbsp;  今天把regalloc 和 color彻底盘了一遍，没有任何问题。在修改了codegen和arm_frame的问题之后，终于呀终于呀把功能测试AC了</p>
+<p><img src="4.png" alt="4"></p>
+<p><img src="5.png" alt="5"></p>
 ]]></content>
       <tags>
         <tag>Daily Summary</tag>
@@ -614,6 +597,23 @@
 
 <p> <img src="1.jpg" alt="1"></p>
 <p>唉，从昨天下午开始，倩倩就不理我了</p>
+]]></content>
+      <tags>
+        <tag>Daily Summary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>每日记录</title>
+    <url>/2020/07/30/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h1 id="2020-7-30"><a href="#2020-7-30" class="headerlink" title="2020/7/30"></a>2020/7/30</h1><h2 id="去过的地方"><a href="#去过的地方" class="headerlink" title="去过的地方"></a>去过的地方</h2><ul>
+<li>计算机学院楼</li>
+<li>云天苑餐厅</li>
+<li>宿舍</li>
+</ul>
+<h2 id="今天做了什么"><a href="#今天做了什么" class="headerlink" title="今天做了什么"></a>今天做了什么</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Compiler的图着色算法</span></span><br><span class="line"><span class="comment">// 部署了Hexo,设置了一些细节，评论功能，侧栏，页脚等</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt; <span class="string">&quot;hello&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="明天最想做的事情"><a href="#明天最想做的事情" class="headerlink" title="明天最想做的事情"></a>明天最想做的事情</h2><p>早起！</p>
+<p><img src="1.png" alt="1"></p>
 ]]></content>
       <tags>
         <tag>Daily Summary</tag>
