@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Linear Algebra--1</title>
+    <url>/2020/09/01/Linear-Algebra-1/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 线性代数其实是从多变量的线性方程组引入的，多变量的线性方程组 ${\small A\textit{x} = b}$ 怎么样去理解，从 ${\small Row}$ 的方向去理解，就是超平面的交集，从 ${\small Column}$ 的角度看就是 ${\small A}$ 的 ${\small Column}$ 的 ${\small \textit{x}}$ 中每个变量的线性组合。然后解这个方程组的话，最朴素的想法就是消元嘛，然后消元这个过程又可以使用矩阵乘法来表示，于是就引入了矩阵的乘法以及乘法的法则。矩阵的乘法（ ${\small AB}$ ）从点积的角度去理解，就只能理解到它的计算法则；从 ${\small Row}$ 的角度看， ${\small AB}$ 的每一个 ${\small Row}$ 就是 ${\small B}$ 的 ${\small Row}$ 的线性组合；从 ${\small column}$ 的角度看， ${\small AB}$ 的每一个 ${\small column}$ 就是 ${\small A}$ 的 ${\small column}$ 的线性组合；从 ${\small column * Row}$ 看就能看出来，分块进行消元法的实质，从而引入了矩阵的逆。</p>
+<a id="more"></a>
+
+<h1 id="线性代数的引入"><a href="#线性代数的引入" class="headerlink" title="线性代数的引入"></a><font color="#0x66CD77">线性代数的引入</font></h1><h3 id="1-线性方程组"><a href="#1-线性方程组" class="headerlink" title="1   线性方程组"></a><font color="#E6CEAC">1   线性方程组</font></h3><h4 id="1-1-从-small-Row-来看"><a href="#1-1-从-small-Row-来看" class="headerlink" title="1.1 从 ${\small Row}$ 来看"></a><font color="#F4606C">1.1 从 ${\small Row}$ 来看</font></h4><ul>
+<li>二维：</li>
+</ul>
+<p><img src="2.png" alt="2"></p>
+<ul>
+<li>三维：</li>
+</ul>
+<p><img src="1.png" alt="1"></p>
+<p>​    所以从行的来看就是超平面的一个交集。<br>$$<br>A\textit{x} = \begin{bmatrix} (row_1)\cdot\textit{x} \ (row_2)\cdot\textit{x} \(row_3)\cdot\textit{x} \end{bmatrix}<br>$$</p>
+<h4 id="1-2-从-small-Column-来看"><a href="#1-2-从-small-Column-来看" class="headerlink" title="1.2 从 ${\small Column}$ 来看"></a><font color="#F4606C">1.2 从 ${\small Column}$ 来看</font></h4><p>$$<br>{A\textit{x} = x_1\cdot\textit{Column_1} + x_2\cdot(\textit{Column_2}) + x_3\cdot(\textit{Column_3})}<br>$$</p>
+<p>先标量乘法，后向量加法。</p>
+<h3 id="2-矩阵乘法"><a href="#2-矩阵乘法" class="headerlink" title="2  矩阵乘法"></a><font color="#E6CEAC">2  矩阵乘法</font></h3><h4 id="2-1-从点乘来看"><a href="#2-1-从点乘来看" class="headerlink" title="2.1 从点乘来看"></a><font color="#F4606C">2.1 从点乘来看</font></h4><p><img src="3.png" alt="3"></p>
+<p><font color="#F4606C">2.2 从 ${\small Row}$ 来看</font><br>$$<br>\begin{bmatrix} row_1 \ \cdots \ row_n \end{bmatrix} \cdot B = \begin{bmatrix} row_1\ of\ AB \ \cdots \ row_n\ of\ AB \end{bmatrix}<br>$$</p>
+<h4 id="2-3-从-small-Column-来看"><a href="#2-3-从-small-Column-来看" class="headerlink" title="2.3 从 ${\small Column}$ 来看"></a><font color="#F4606C">2.3 从 ${\small Column}$ 来看</font></h4><p>$$<br>A\cdot\textit{x} = A[b_1 \cdots b_n] = [Ab_1 \cdots Ab_n]<br>$$</p>
+<p><font color="#F4606C">2.4 从 ${\small Column \cdot Row}$ 来看</font></p>
+<p><img src="4.png" alt="4"></p>
+]]></content>
+      <tags>
+        <tag>冲刺研究生</tag>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>LaTex公式显示</title>
     <url>/2020/08/07/LaTex%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; Hexo的Latex显示处理，我用的是next 6.13.4。主要是网上的教程大多是换一个渲染引擎，其实完全没有必要。Next还是很强大的。</p>
@@ -68,6 +96,11 @@
         <tag>冲刺研究生</tag>
         <tag>操作系统</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>NetWork--DAY1</title>
+    <url>/2020/08/17/NetWork-DAY1/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>OS--DAY2</title>
@@ -266,6 +299,30 @@
       </tags>
   </entry>
   <entry>
+    <title>OS--DAY3</title>
+    <url>/2020/08/24/OS-DAY3/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>冲刺研究生</tag>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>bug修正记录</title>
+    <url>/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 所有的编译器比赛期间的bug记录</p>
+<a id="more"></a>
+
+<p>图着色ppt: <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/">https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/</a></p>
+<h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
+      <categories>
+        <category>Compiler</category>
+        <category>Optimization</category>
+        <category>Competition</category>
+        <category>Compiler</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/07/30/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -282,21 +339,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>bug修正记录</title>
-    <url>/2020/08/03/bug%E4%BF%AE%E6%AD%A3%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp; 所有的编译器比赛期间的bug记录</p>
-<a id="more"></a>
-
-<p>图着色ppt: <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/">https://www.cs.cmu.edu/afs/cs/academic/class/15745-s16/www/lectures/</a></p>
-<h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
-      <categories>
-        <category>Compiler</category>
-        <category>Optimization</category>
-        <category>Competition</category>
-        <category>Compiler</category>
-      </categories>
   </entry>
   <entry>
     <title>九推复习计划</title>
@@ -352,6 +394,19 @@
       </tags>
   </entry>
   <entry>
+    <title>文章置顶</title>
+    <url>/2020/08/07/%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 添加文章置顶功能，但是在安装卸载渲染引擎后会<font color="#ff7700">失效</font>。</p>
+<a id="more"></a>
+
+<p>手动改js: <a href="https://www.jianshu.com/p/42a4efcdf8d7">https://www.jianshu.com/p/42a4efcdf8d7</a></p>
+<p>然后修改渲染：<a href="https://blog.csdn.net/qwerty200696/article/details/79010629">https://blog.csdn.net/qwerty200696/article/details/79010629</a></p>
+]]></content>
+      <tags>
+        <tag>日常维护</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>内存管理</title>
     <url>/2020/08/06/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<p>&nbsp; &nbsp; 今天早上初赛结束，所以就休息了一天，在宿舍躺尸了一天。所以顺便想看下C++内存管理的部分，想把这个东西弄得比较透彻吧，今天的内容属于开个头。因为类似的学习文希望显示得优先级高一些，所以就修改了 js 文件，添加了文章优先级排序。</p>
@@ -391,19 +446,6 @@
       <tags>
         <tag>C++</tag>
         <tag>Memory Mangement</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文章置顶</title>
-    <url>/2020/08/07/%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp; 添加文章置顶功能，但是在安装卸载渲染引擎后会<font color="#ff7700">失效</font>。</p>
-<a id="more"></a>
-
-<p>手动改js: <a href="https://www.jianshu.com/p/42a4efcdf8d7">https://www.jianshu.com/p/42a4efcdf8d7</a></p>
-<p>然后修改渲染：<a href="https://blog.csdn.net/qwerty200696/article/details/79010629">https://blog.csdn.net/qwerty200696/article/details/79010629</a></p>
-]]></content>
-      <tags>
-        <tag>日常维护</tag>
       </tags>
   </entry>
   <entry>
@@ -450,6 +492,43 @@
 <li>晚饭  2.5+3.7</li>
 </ul>
 <h2 id="明天最想做的事情"><a href="#明天最想做的事情" class="headerlink" title="明天最想做的事情"></a><font color="#BEE7E9">明天最想做的事情</font></h2><p>首先是<strong>早起</strong>，早起做<strong>slam</strong></p>
+]]></content>
+      <tags>
+        <tag>Daily Summary</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>每日记录-2020-08-03</title>
+    <url>/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。</p>
+<p>&nbsp; &nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。</p>
+<a id="more"></a>
+
+<p><img src="1.png" alt="1"></p>
+<h2 id="ADD-HEXO：在线聊天Tidio"><a href="#ADD-HEXO：在线聊天Tidio" class="headerlink" title="ADD HEXO：在线聊天Tidio"></a><font color="#BEE7E9">ADD HEXO：在线聊天Tidio</font></h2><ol>
+<li><p><font color="#ff6622">代码</font></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 214-221</span></span><br><span class="line"><span class="comment"># A button to open designated chat widget in sidebar.</span></span><br><span class="line"><span class="comment"># Firstly, you need enable the chat service you want to activate its sidebar button.</span></span><br><span class="line"><span class="attr">chat:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#service: chatra</span></span><br><span class="line">  <span class="attr">service:</span> <span class="string">tidio</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-comment</span> <span class="comment"># Icon name in Font Awesome, set false to disable icon.</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">Chat</span> <span class="comment"># Button text, change it as you wish.</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+   <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 766-771</span></span><br><span class="line"><span class="comment"># Tidio Support</span></span><br><span class="line"><span class="comment"># See: https://www.tidiochat.com</span></span><br><span class="line"><span class="comment"># Dashboard: https://www.tidiochat.com/panel/dashboard</span></span><br><span class="line"><span class="attr">tidio:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">key:</span> <span class="string">xhf2buz63zl56r6o3xy4hkep9gznwevf</span> <span class="comment"># Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><font color="#ff6622">实现效果</font></li>
+</ol>
+<ul>
+<li><p><font color="#ff8899">侧栏</font></p>
+<p><img src="2.png" alt="2"></p>
+</li>
+<li><p><font color="#ff8899">右下角聊天框</font></p>
+<p><img src="3.png" alt="3"></p>
+</li>
+</ul>
+<h2 id="Compiler"><a href="#Compiler" class="headerlink" title="Compiler"></a><font color="#BEE7E9">Compiler</font></h2><p>&nbsp; &nbsp;  今天把regalloc 和 color彻底盘了一遍，没有任何问题。在修改了codegen和arm_frame的问题之后，终于呀终于呀把功能测试AC了</p>
+<p><img src="4.png" alt="4"></p>
+<p><img src="5.png" alt="5"></p>
 ]]></content>
       <tags>
         <tag>Daily Summary</tag>
@@ -505,43 +584,6 @@
 </ol>
 </li>
 </ol>
-]]></content>
-      <tags>
-        <tag>Daily Summary</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>每日记录-2020-08-03</title>
-    <url>/2020/08/03/%E6%AF%8F%E6%97%A5%E8%AE%B0%E5%BD%95-2020-08-03/</url>
-    <content><![CDATA[<p>&nbsp; &nbsp; 今天起来得特别早，主要就是倩倩今天第一天上班嘞，我怕她一个人早上坐车比较害怕，所以我就早点起来，万一说害怕了给我打电话我也能接上。上周五我的湖盐发债上市了，然后截止到上周五收盘赚了160.6，看看这次能赚多少, hhh。起的太早了，脑子还是有点蒙的。</p>
-<p>&nbsp; &nbsp; 今天想做的任务有先看怎么释放结构体等的内存，然后查时间看TLE。</p>
-<a id="more"></a>
-
-<p><img src="1.png" alt="1"></p>
-<h2 id="ADD-HEXO：在线聊天Tidio"><a href="#ADD-HEXO：在线聊天Tidio" class="headerlink" title="ADD HEXO：在线聊天Tidio"></a><font color="#BEE7E9">ADD HEXO：在线聊天Tidio</font></h2><ol>
-<li><p><font color="#ff6622">代码</font></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 214-221</span></span><br><span class="line"><span class="comment"># A button to open designated chat widget in sidebar.</span></span><br><span class="line"><span class="comment"># Firstly, you need enable the chat service you want to activate its sidebar button.</span></span><br><span class="line"><span class="attr">chat:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment">#service: chatra</span></span><br><span class="line">  <span class="attr">service:</span> <span class="string">tidio</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-comment</span> <span class="comment"># Icon name in Font Awesome, set false to disable icon.</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">Chat</span> <span class="comment"># Button text, change it as you wish.</span></span><br></pre></td></tr></table></figure>
-
-
-
-</li>
-</ol>
-   <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/next/config.yml 766-771</span></span><br><span class="line"><span class="comment"># Tidio Support</span></span><br><span class="line"><span class="comment"># See: https://www.tidiochat.com</span></span><br><span class="line"><span class="comment"># Dashboard: https://www.tidiochat.com/panel/dashboard</span></span><br><span class="line"><span class="attr">tidio:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">key:</span> <span class="string">xhf2buz63zl56r6o3xy4hkep9gznwevf</span> <span class="comment"># Public Key, get it from dashboard. See: https://www.tidiochat.com/panel/settings/developer</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><font color="#ff6622">实现效果</font></li>
-</ol>
-<ul>
-<li><p><font color="#ff8899">侧栏</font></p>
-<p><img src="2.png" alt="2"></p>
-</li>
-<li><p><font color="#ff8899">右下角聊天框</font></p>
-<p><img src="3.png" alt="3"></p>
-</li>
-</ul>
-<h2 id="Compiler"><a href="#Compiler" class="headerlink" title="Compiler"></a><font color="#BEE7E9">Compiler</font></h2><p>&nbsp; &nbsp;  今天把regalloc 和 color彻底盘了一遍，没有任何问题。在修改了codegen和arm_frame的问题之后，终于呀终于呀把功能测试AC了</p>
-<p><img src="4.png" alt="4"></p>
-<p><img src="5.png" alt="5"></p>
 ]]></content>
       <tags>
         <tag>Daily Summary</tag>
