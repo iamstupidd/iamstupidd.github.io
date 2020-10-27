@@ -37,7 +37,7 @@
 <li>三维：</li>
 </ul>
 <p><img src="1.png" alt="1"></p>
-<p>​    所以从行的来看就是超平面的一个交集。<br>$$<br>A\textit{x} = \begin{bmatrix} (row_1)\cdot\textit{x} \ (row_2)\cdot\textit{x} \(row_3)\cdot\textit{x} \end{bmatrix}<br>$$</p>
+<p>​    所以从行的来看就是超平面的一个交集。<br>$$<br>A\textit{x} = \begin{bmatrix}\ (row_1)\cdot\textit{x} \ (row_2)\cdot\textit{x} \(row_3)\cdot\textit{x}\ \end{bmatrix}<br>$$</p>
 <h4 id="1-2-从-small-Column-来看"><a href="#1-2-从-small-Column-来看" class="headerlink" title="1.2 从 ${\small Column}$ 来看"></a><font color="#F4606C">1.2 从 ${\small Column}$ 来看</font></h4><p>$$<br>{A\textit{x} = x_1\cdot\textit{Column_1} + x_2\cdot(\textit{Column_2}) + x_3\cdot(\textit{Column_3})}<br>$$</p>
 <p>先标量乘法，后向量加法。</p>
 <h3 id="2-矩阵乘法"><a href="#2-矩阵乘法" class="headerlink" title="2  矩阵乘法"></a><font color="#E6CEAC">2  矩阵乘法</font></h3><h4 id="2-1-从点乘来看"><a href="#2-1-从点乘来看" class="headerlink" title="2.1 从点乘来看"></a><font color="#F4606C">2.1 从点乘来看</font></h4><p><img src="3.png" alt="3"></p>
@@ -45,11 +45,17 @@
 <h4 id="2-3-从-small-Column-来看"><a href="#2-3-从-small-Column-来看" class="headerlink" title="2.3 从 ${\small Column}$ 来看"></a><font color="#F4606C">2.3 从 ${\small Column}$ 来看</font></h4><p>$$<br>A\cdot\textit{x} = A[b_1 \cdots b_n] = [Ab_1 \cdots Ab_n]<br>$$</p>
 <p><font color="#F4606C">2.4 从 ${\small Column \cdot Row}$ 来看</font></p>
 <p><img src="4.png" alt="4"></p>
+<h4 id="2-5-从-small-Block-Elimination-来看"><a href="#2-5-从-small-Block-Elimination-来看" class="headerlink" title="2.5 从 ${\small Block\ Elimination}$ 来看"></a><font color="#F4606C">2.5 从 ${\small Block\ Elimination}$ 来看</font></h4><p><img src="5.png" alt="5"></p>
 ]]></content>
       <tags>
         <tag>冲刺研究生</tag>
         <tag>操作系统</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Linear Algebra--2</title>
+    <url>/2020/09/02/Linear-Algebra-2/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>NetWork--DAY1</title>
