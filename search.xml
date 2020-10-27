@@ -323,8 +323,8 @@
 <h2 id="1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str"><a href="#1-彻底修复指令8位循环右移两位限制-add-sub-mov-和-栈中寻址限制-ldr-str" class="headerlink" title="1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)"></a>1.  彻底修复指令8位循环右移两位限制(add,sub,mov) 和 栈中寻址限制(ldr,str)</h2><h2 id="2-溢出"><a href="#2-溢出" class="headerlink" title="2. 溢出"></a>2. 溢出</h2><h2 id="3-codegen-cpp-bl-指令的dst和src"><a href="#3-codegen-cpp-bl-指令的dst和src" class="headerlink" title="3. codegen .cpp bl 指令的dst和src"></a>3. codegen .cpp bl 指令的dst和src</h2>]]></content>
       <categories>
         <category>Compiler</category>
-        <category>Optimization</category>
         <category>Competition</category>
+        <category>Optimization</category>
         <category>Compiler</category>
       </categories>
   </entry>
@@ -699,5 +699,28 @@ height: 100%; left: 0; top: 0;"> </iframe></div>
         <category>Competition</category>
         <category>UAV</category>
       </categories>
+  </entry>
+  <entry>
+    <title>风景速写画(一)</title>
+    <url>/2020/10/27/%E9%A3%8E%E6%99%AF%E9%80%9F%E5%86%99%E7%94%BB-%E4%B8%80/</url>
+    <content><![CDATA[<p>&nbsp; &nbsp; 风景速写练习。。。。</p>
+<a id="more"></a>
+
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="1.jpg"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">1. </font>2020/10/20</div> </center>
+
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="2.jpg"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">2. </font>2020/10/22</div> </center>
+
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="3.jpg"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">3. </font>2020/10/24</div> </center>
+
+<center>    <img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);"     src="4.jpg"><div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;"><font color="#ff7700">4. </font>2020/10/27</div> </center>]]></content>
+      <categories>
+        <category>Drawing</category>
+        <category>Pencil</category>
+      </categories>
+      <tags>
+        <tag>速写</tag>
+        <tag>绘画</tag>
+        <tag>兴趣爱好</tag>
+      </tags>
   </entry>
 </search>
